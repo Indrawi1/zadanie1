@@ -21,3 +21,7 @@ docker history zadanie:v1
 
 wrzycenie obraza na dockerhub
 docker push milenarunets/zadanie:v1
+
+Rozmiar obrazu i zagrożenia 
+![DockerScoutiRozmiar](https://github.com/Indrawi1/zadanie1/assets/98088474/b6e1428a-926b-4d8e-bb15-d004481d95a9)
+
