@@ -25,3 +25,9 @@ docker push milenarunets/zadanie:v1
 Rozmiar obrazu i zagrożenia 
 ![DockerScoutiRozmiar](https://github.com/Indrawi1/zadanie1/assets/98088474/b6e1428a-926b-4d8e-bb15-d004481d95a9)
 
+
+CZĘŚĆ DODATKOWA -----------------
+Zbudować obrazy kontenera z aplikacją opracowaną w punkcie nr 1, które będą pracował na architekturach: linux/arm64 oraz linux/amd64 wykorzystując sterownik docker-container. Dockerfile powinien wykorzystywać rozszerzony frontend i umożliwiać wykorzystanie danych cache w procesie budowania obrazu (deklaracje wewnątrz Dockerfile)
+![image](https://github.com/Indrawi1/zadanie1/assets/98088474/9ea20e56-1359-461c-b5d8-7660a6655038)
+
+docker buildx build -f Dockerfile2 -t docker.io/milenarunets/zadanie:v2 --platform linux/amd64,linux/arm64 --tag milenarunets/zadanie:v2 --cache-to=type=registry,ref=milenarunets/zadanie:cache,mode=max,--cache-from=type=registry,ref=milenarunets/zadanie:cache --push .
