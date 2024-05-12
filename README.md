@@ -17,7 +17,8 @@ docker logs kontener1
 d.	sprawdzenia, ile warstw posiada zbudowany obraz:
 docker history zadanie:v1
 
-![image](https://github.com/Indrawi1/zadanie1/assets/98088474/d4f99b31-780e-4178-a5f2-c2a115fe63d8)
+![image](https://github.com/Indrawi1/zadanie1/assets/98088474/682c6062-15a8-4006-a308-2cf9a9681c56)
+
 
 wrzycenie obraza na dockerhub
 docker push milenarunets/zadanie:v1
